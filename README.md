@@ -34,12 +34,13 @@
 
 
 ## 🧱 Project Structure
+```
 ├─ lib
 │  ├─ core/ → Constants, DI, extensions, helpers, routing, themes
 │  ├─ data/ → Entities, repositories, services
 │  ├─ presentation/ → Screens, BLoCs, widgets
 │  └─ main.dart
-
+```
 ---
 
 ## 📦 Dependencies
