@@ -1,6 +1,6 @@
 # 🐶 DogSociety
 
-**DogBreed Explorer** is a Flutter application created for AppNation Case Study.
+**DogSociety** is a Flutter application created for AppNation Case Study.
 
 ---
 
@@ -29,18 +29,19 @@
 - Real-time **internet connectivity checks** before all data operations.
 - **No connection dialogs** to notify users during offline usage.
 - Support for zoomable breed images in dialogs.
-- Custom bottom navigation bar with a modern aesthetic.
-- Reusable widgets and a scalable architecture.
 
 ---
 
-## 🧱 Project Structure
 
-lib/
-├─ core/ → Constants, DI, extensions, helpers, routing, themes
-├─ data/ → Entities, repositories, services
-├─ presentation/ → Screens, BLoCs, widgets
-├─ main.dart → App entry point
+## 🧱 Project Structure
+└── 📁lib
+    └── 📁core
+
+└──lib
+   └── core/ → Constants, DI, extensions, helpers, routing, themes
+   └── data/ → Entities, repositories, services
+   └── presentation/ → Screens, BLoCs, widgets
+   └── main.dart → App entry point
 
 ## 📦 Dependencies
 
