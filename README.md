@@ -34,14 +34,13 @@
 
 
 ## 🧱 Project Structure
-└── 📁lib
-    └── 📁core
+├─ lib
+│  ├─ core/ → Constants, DI, extensions, helpers, routing, themes
+│  ├─ data/ → Entities, repositories, services
+│  ├─ presentation/ → Screens, BLoCs, widgets
+│  └─ main.dart
 
-└──lib
-   └── core/ → Constants, DI, extensions, helpers, routing, themes
-   └── data/ → Entities, repositories, services
-   └── presentation/ → Screens, BLoCs, widgets
-   └── main.dart → App entry point
+---
 
 ## 📦 Dependencies
 
@@ -61,3 +60,4 @@
 ## 🐾 Credits
 
 - [Dog API](https://dog.ceo/dog-api/) for providing dog breed data and images.
+
