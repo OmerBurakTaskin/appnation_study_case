@@ -4,7 +4,9 @@ class AppStrings {
   static String get settings => "Settings";
   static String get breeds => "Breeds";
   static String get breed => "Breed";
-
+  static String get noBreed => "No results found";
+  static String get trySomethingElse => "Try searching with another word";
+  
   // connection dialog
   static String get noInternet => "No Internet Connection";
   static String get tryAgain => "Try Again";
@@ -25,6 +27,4 @@ class AppStrings {
   static String get shareWithFriends => "Share with Friends";
   static String get osVersion => "OS Version";
   static String get notKnown => "Not Known";
-
-
 }

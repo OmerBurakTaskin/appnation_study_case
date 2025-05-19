@@ -1,16 +1,62 @@
-# app_nation_case
+# 🐶 DogSociety
 
-A new Flutter project.
+**DogBreed Explorer** is a Flutter application created for AppNation Case Study.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Features
 
-A few resources to get you started if this is your first Flutter project:
+### 🚀 Splash Screen
+- Automatically shown at app launch.
+- Concurrently fetches and caches all dog breeds using a Dog API.
+- Transitions to the home screen once data is ready.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🏠 Home Screen
+- Displays a list of all dog breeds.
+- Includes a **dynamic BottomAppBar** with an expandable/collapsible textfield for filtering breeds.
+- Clicking on a breed opens a **detail dialog** showing:
+  - The breed name
+  - A random image of the breed
+  - Sub-breeds (if available)
+  - A button to **generate a new random image**
+  - An option to open the browser and search more images of breeds
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### ⚙️ Settings Screen
+- Displays the user's OS version via method channel communication.
+- Clean and simple interface for general app settings.
+
+### ⚡ UI/UX Extras
+- Real-time **internet connectivity checks** before all data operations.
+- **No connection dialogs** to notify users during offline usage.
+- Support for zoomable breed images in dialogs.
+- Custom bottom navigation bar with a modern aesthetic.
+- Reusable widgets and a scalable architecture.
+
+---
+
+## 🧱 Project Structure
+
+lib/
+├─ core/ → Constants, DI, extensions, helpers, routing, themes
+├─ data/ → Entities, repositories, services
+├─ presentation/ → Screens, BLoCs, widgets
+├─ main.dart → App entry point
+
+## 📦 Dependencies
+
+| Package                        | Description                        |
+|-------------------------------|------------------------------------|
+| `bloc` / `flutter_bloc`       | State management                   |
+| `dio`                         | HTTP client                        |
+| `get_it`                      | Dependency injection               |
+| `flutter_svg`                 | SVG asset support                  |
+
+## 🧠 Architecture & Patterns
+
+- **Clean Architecture** with a separation of concerns across `core`, `data`, and `presentation` layers.
+- **BLoC pattern** to manage UI state in a reactive and testable way.
+- Uses **Abstract Factory Pattern** for dynamic widget creation to access native widgets (`widget_factory` directory).
+
+## 🐾 Credits
+
+- [Dog API](https://dog.ceo/dog-api/) for providing dog breed data and images.
